@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/*Full height*/
+html,body,#root {
+  height:100%;
+}
+
+/*CLOUDS*/
+@keyframes clouds{0%{background-position:0 0;}100%{background-position:1000px 0;}}
+.animate-clouds{
+  background-image:url(`https://i.ibb.co/4f7HZ0K/clouds.png`);
+  background-repeat:repeat-x;
+  background-size:contain;
+  animation:clouds 60s linear infinite;
+}
+
+/*RAIN*/
+@keyframes rain{0%{background-position:0,0;}100%{background-position:0 1000px;}}
+.animate-rain{
+  background-image: url('https://i.ibb.co/3d2K8tX/rain.png');
+  background-repeat: repeat;
+  animation:rain 1s linear infinite;
+}
+
+/*SUN*/
+@keyframes sun-spin{from{transform:rotate(0);}to{tranform:rotate(360deg);}}
+.animate-sun::before{
+  content:'';
+  position:absolute;
+  width:100px;
+  height:100px;
+  top:30px;
+  left:50%;
+  transform:translateX(-50%);
+  background:radial-gradient(circle,yellow 50%, transparent 60%);
+  border-radius: 50%;
+  animation:sun-spin 20s linear infinite;
+}
+
+/*TV CARD*/
+.tv-card{
+  backdrop-filter:blur(6px);
+  background: rgba(255,255,0.08);
+  border: 1px solid rgba(255,255,255.0.05);
+}
