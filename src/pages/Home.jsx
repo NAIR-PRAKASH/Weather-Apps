@@ -1,8 +1,8 @@
 import React,{useState}from"react";
-import SearchBar from "../components/SearchBar.jsx";
-import WeatherCard from "../components/WeatherCard";
-import Loading from "../components/Loading";
-import ErrorBox from "../components/ErrorBox";
+import SearchBar from "../Components/SearchBar.jsx";
+import WeatherCard from "../Components/WeatherCard.jsx";
+import Loading from "../Components/Loading.jsx";
+import ErrorBox from "../Components/ErrorBox.jsx";
 import{API_KEY} from "../config";
 
 import{useUnit} from "../context/UnitContext";

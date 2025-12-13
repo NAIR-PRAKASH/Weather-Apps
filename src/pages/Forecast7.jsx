@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../Components/SearchBar";
 import {useUnit} from "../context/UnitContext";
 import {API_KEY}from "../config";
 
